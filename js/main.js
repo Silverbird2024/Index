@@ -1446,10 +1446,9 @@ $scope.MoveObject("Container-index-z03",750,80);
 } else {
 };};
 $scope.TextArea457_change = function() {localStorage.setItem("i10002",$App.i10002);};
-$scope.PushButton956_click = function() {$scope.GotoPage( "bounce" );
-$scope.GotoPage( "Indexwrite" );};
 $scope.Headline652_click = function() {$scope.GotoPage( "landinghome" );};
 $scope.SVGicon1_click = function() {$scope.GotoPage( "Backup" );};
+$scope.SVGicon48_click = function() {window.document.location.reload();};
 });
 NeoApp.controller("Backup_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
 $App.NAB.PageNumber = 2;
@@ -1458,6 +1457,7 @@ $scope.Headline1_click = function() {$scope.GotoPage( "Indexwrite1" );};
 $scope.PushButton1_click = function() {navigator.clipboard.writeText($App.bacup);
 localStorage.setItem("backup",$App.backup);};
 $scope.TextArea1_change = function() {localStorage.setItem("backup",$App.backup);};
+$scope.PushButton2_click = function() {$scope.LocalFileToVar("Paragraph1","backup","text");};
 });
 NeoApp.controller("NewDialog_Ctrl", function($scope,$rootScope,$modalInstance,$filter,$window) {
  $scope.CloseDialog = function() {
